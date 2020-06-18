@@ -34,7 +34,7 @@ jobs:
           cmd: install # will run `yarn install` command
         
     - name: Install Surge 
-      run: npm install -gloabl surge
+      run: npm install -global surge
     
     - name: Deploy to Surge
       run: surge ./build react_deploy.surge.su ${{ secrets.REACTAPP_TOKEN }}
