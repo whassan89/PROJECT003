@@ -37,4 +37,4 @@ jobs:
       run: npm install -gloabl surge
     
     - name: Deploy to Surge
-      run: surge ./build PROJECT003.surge.su ${{ secrets.REACTAPP_TOKEN }}
+      run: surge ./build react_deploy.surge.su ${{ secrets.REACTAPP_TOKEN }}
